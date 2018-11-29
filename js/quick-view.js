@@ -25,6 +25,14 @@ function quickViewCallback(property){
                 var descriptionProduct = objProduct.find('.description').html();
                 objPopupProduct.find('.description .text').html(descriptionProduct);
             };
+            if(objProduct.find('.nylon').length){
+                var nylon = objProduct.find('.nylon span').html();
+                objPopupProduct.find('.nylon').html(nylon);
+            };
+            if(objProduct.find('.metalico').length){
+                var metalico = objProduct.find('.metalico span').html();
+                objPopupProduct.find('.metalico').html(metalico);
+            };
         });
     }
 }
